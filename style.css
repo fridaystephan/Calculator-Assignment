@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+}
+body{
+  height: 100vh;
+  background: rgb(66, 65, 65);
+  position: relative;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.top{
+  background:white;
+  color:#0f2734;
+  font-size: inherit;
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.display{
+  width: 300px;
+  height: 450px;
+  display: grid;
+  grid-template-rows: 30% 70%;
+  padding: 25px;
+}
+.top-grid{
+  display: grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: 
+  "a a b c"
+  "d e f g"
+  "h i j k"
+  "l m n k"
+  "o p q q"
+  ;
+}
+.q{
+  grid-area:equal;
+  background-color: orchid;
+}
+button{
+  background-color: rgb(7, 7, 36);
+  border: 0.5px solid #1e1e2f;
+  display:grid;
+  place-content: center;
+  font-size: inherit;
+  font-weight: 500;
+  color: #fff;
+}
+.a{
+  grid-area: a;
+  background-color: orangered;
+  border: 2px solid orangered;
+}
+.b{
+  grid-area: b;
+  border: 1px solid #1e1e2f;
+}
+.c{
+  grid-area: c;
+  border: 1px solid #1e1e2f;
+}
+.d{
+  grid-area: d;
+}
+.e{
+  grid-area: e;
+}
+.f{
+  grid-area: f;
+}
+.g{
+  grid-area: g;
+}
+.h{
+  grid-area: h;
+}
+.i{
+  grid-area: i;
+}
+.j{
+  grid-area: j;
+}
+.k{
+  grid-area: k;
+}
+.l{
+  grid-area: l;
+}
+.m{
+  grid-area: m;
+}
+.n{
+  grid-area: n;
+}
+.o{
+  grid-area: o;
+}
+.p{
+  grid-area: p;
+}
+.q{
+  grid-area: q;
+}
+button:hover{
+    background-color: aqua;
+}
